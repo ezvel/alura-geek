@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 12px;
+    font-family: var(--fuente-base);
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
