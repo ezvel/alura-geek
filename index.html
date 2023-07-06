@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="css/02.base/grid.css">
 
     <link rel="stylesheet" href="css/03.secciones/header.css">
+    <link rel="stylesheet" href="css/03.secciones/footer.css">
     
+    <link rel="stylesheet" href="css/04.componentes/logo/logo.css">
     <link rel="stylesheet" href="css/04.componentes/boton-login/button-login.css">
     <link rel="stylesheet" href="css/04.componentes/banner/banner.css">
     <link rel="stylesheet" href="css/04.componentes/productos/productos.css">
@@ -27,62 +29,97 @@
     <link rel="stylesheet" href="css/04.componentes/productos/producto-ver-todo.css">
     <link rel="stylesheet" href="css/04.componentes/productos/productos-producto.css">
     <link rel="stylesheet" href="css/04.componentes/producto/producto.css">
+    <link rel="stylesheet" href="css/04.componentes/nav/nav.css">
+    <link rel="stylesheet" href="css/04.componentes/nav/nav-item.css">
+    <link rel="stylesheet" href="css/04.componentes/form/form.css">
+    <link rel="stylesheet" href="css/04.componentes/form/form-titulo.css">
+    <link rel="stylesheet" href="css/04.componentes/form/form-label.css">
+    <link rel="stylesheet" href="css/04.componentes/form/form-nombre.css">
+    <link rel="stylesheet" href="css/04.componentes/form/form-mensaje.css">
+    <link rel="stylesheet" href="css/04.componentes/autor/autor.css">
+    <link rel="stylesheet" href="css/04.componentes/autor/autor-nombre.css">
+    <link rel="stylesheet" href="css/04.componentes/autor/autor-anio.css">
 
     <title>Alura Geek</title>
 </head>
 <body>
     <header class="header">
-        <img src="assets/logo/logo.png" alt="logo de Alura Geek">
+        <img class="logo" src="assets/logo/logo.svg" alt="logo de Alura Geek">
         <button class="button-login">Login</button>
         <img src="assets/iconos/busqueda.png">
     </header>
     <section class="banner">
     </section>
-
-    <article class="productos row">
-        <div class="productos__header col-12">
-            <h2 class="productos__titulo">Star Wars</h2>
-            <p class="productos__ver-todo">Ver todo</p>
-        </div>
-        <article class="productos__producto producto col-6">
+    <main>
+        <article class="productos row">
+            <div class="productos__header col-12">
+                <h2 class="productos__titulo">Star Wars</h2>
+                <p class="productos__ver-todo">Ver todo</p>
+            </div>
+            <article class="productos__producto producto col-6">
+            </article>
+            <article class="productos__producto producto col-6">
+            </article>
+            <article class="productos__producto producto col-6">
+            </article>
+            <article class="productos__producto producto col-6">
+            </article>
         </article>
-        <article class="productos__producto producto col-6">
+        
+        <article class="productos row">
+            <div class="productos__header col-12">
+                <h2 class="productos__titulo">Consolas</h2>
+                <p class="productos__ver-todo">Ver todo</p>
+            </div>
+            <article class="productos__producto producto col-6">
+            </article>
+            <article class="productos__producto producto col-6">
+            </article>
+            <article class="productos__producto producto col-6">
+            </article>
+            <article class="productos__producto producto col-6">
+            </article>
         </article>
-        <article class="productos__producto producto col-6">
-        </article>
-        <article class="productos__producto producto col-6">
-        </article>
-    </article>
     
-    <article class="productos row">
-        <div class="productos__header col-12">
-            <h2 class="productos__titulo">Consolas</h2>
-            <p class="productos__ver-todo">Ver todo</p>
+        <article class="productos row">
+            <div class="productos__header col-12">
+                <h2 class="productos__titulo">Diversos</h2>
+                <p class="productos__ver-todo">Ver todo</p>
+            </div>
+            <article class="productos__producto producto col-6">
+            </article>
+            <article class="productos__producto producto col-6">
+            </article>
+            <article class="productos__producto producto col-6">
+            </article>
+            <article class="productos__producto producto col-6">
+            </article>
+        </article>
+    </main>
+    
+    <footer class="footer row">
+        <img class="logo col-12" src="assets/logo/logo.svg" alt="logo de Alura Geek">
+        <nav class="nav col-12">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">Quienes somos</a></li>
+                <li class="nav__item" ><a class="nav__link" href="#">Política de privacidad</a></li>
+                <li class="nav__item" ><a class="nav__link" href="#">Programa de fidelidad</a></li>
+                <li class="nav__item" ><a class="nav__link" href="#">Nuestras tiendas</a></li>
+                <li class="nav__item" ><a class="nav__link" href="#">Quiero ser franquiciado</a></li>
+                <li class="nav__item" ><a class="nav__link" href="#">Anuncie aquí</a></li>
+            </ul>
+        </nav>
+        <form class="form col-12">
+            <p class="form__titulo">Hable con nosotros</p>
+            <label class="form__label">Nombre</label>
+            <input class="form__nombre" type="text">
+            <textarea class="form__mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+        </form>
+        <div class="autor col-12">
+            <p class="autor__nombre">Desarrollador por Ezequiel Vélez</p>
+            <p class="autor__anio">2021</p>
         </div>
-        <article class="productos__producto producto col-6">
-        </article>
-        <article class="productos__producto producto col-6">
-        </article>
-        <article class="productos__producto producto col-6">
-        </article>
-        <article class="productos__producto producto col-6">
-        </article>
-    </article>
-
-    <article class="productos row">
-        <div class="productos__header col-12">
-            <h2 class="productos__titulo">Diversos</h2>
-            <p class="productos__ver-todo">Ver todo</p>
-        </div>
-        <article class="productos__producto producto col-6">
-        </article>
-        <article class="productos__producto producto col-6">
-        </article>
-        <article class="productos__producto producto col-6">
-        </article>
-        <article class="productos__producto producto col-6">
-        </article>
-    </article>
+    </footer>
 
 </body>
 </html>
