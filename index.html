@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/03.secciones/footer.css">
     
     <link rel="stylesheet" href="css/04.componentes/logo/logo.css">
-    <link rel="stylesheet" href="css/04.componentes/boton-login/button-login.css">
+    <link rel="stylesheet" href="css/04.componentes/boton/button.css">
     <link rel="stylesheet" href="css/04.componentes/banner/banner.css">
     <link rel="stylesheet" href="css/04.componentes/productos/productos.css">
     <link rel="stylesheet" href="css/04.componentes/productos/productos-header.css">
@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="css/04.componentes/productos/productos-producto.css">
     <link rel="stylesheet" href="css/04.componentes/producto/producto.css">
     <link rel="stylesheet" href="css/04.componentes/nav/nav.css">
+    <link rel="stylesheet" href="css/04.componentes/nav/nav-list.css">
     <link rel="stylesheet" href="css/04.componentes/nav/nav-item.css">
     <link rel="stylesheet" href="css/04.componentes/form/form.css">
     <link rel="stylesheet" href="css/04.componentes/form/form-titulo.css">
@@ -45,7 +46,7 @@
 <body>
     <header class="header">
         <img class="logo" src="assets/logo/logo.svg" alt="logo de Alura Geek">
-        <button class="button-login">Login</button>
+        <button class="button button--login">Login</button>
         <img src="assets/iconos/busqueda.png">
     </header>
     <section class="banner">
@@ -56,13 +57,13 @@
                 <h2 class="productos__titulo">Star Wars</h2>
                 <p class="productos__ver-todo">Ver todo</p>
             </div>
-            <article class="productos__producto producto col-6">
+            <article class="productos__producto producto col-6 col-sm-3">
             </article>
-            <article class="productos__producto producto col-6">
+            <article class="productos__producto producto col-6 col-sm-3">
             </article>
-            <article class="productos__producto producto col-6">
+            <article class="productos__producto producto col-6 col-sm-3">
             </article>
-            <article class="productos__producto producto col-6">
+            <article class="productos__producto producto col-6 col-sm-3">
             </article>
         </article>
         
@@ -71,13 +72,13 @@
                 <h2 class="productos__titulo">Consolas</h2>
                 <p class="productos__ver-todo">Ver todo</p>
             </div>
-            <article class="productos__producto producto col-6">
+            <article class="productos__producto producto col-6 col-sm-3">
             </article>
-            <article class="productos__producto producto col-6">
+            <article class="productos__producto producto col-6 col-sm-3">
             </article>
-            <article class="productos__producto producto col-6">
+            <article class="productos__producto producto col-6 col-sm-3">
             </article>
-            <article class="productos__producto producto col-6">
+            <article class="productos__producto producto col-6 col-sm-3">
             </article>
         </article>
     
@@ -86,20 +87,20 @@
                 <h2 class="productos__titulo">Diversos</h2>
                 <p class="productos__ver-todo">Ver todo</p>
             </div>
-            <article class="productos__producto producto col-6">
+            <article class="productos__producto producto col-6 col-sm-3">
             </article>
-            <article class="productos__producto producto col-6">
+            <article class="productos__producto producto col-6 col-sm-3">
             </article>
-            <article class="productos__producto producto col-6">
+            <article class="productos__producto producto col-6 col-sm-3">
             </article>
-            <article class="productos__producto producto col-6">
+            <article class="productos__producto producto col-6 col-sm-3">
             </article>
         </article>
     </main>
     
     <footer class="footer row">
-        <img class="logo col-12" src="assets/logo/logo.svg" alt="logo de Alura Geek">
-        <nav class="nav col-12">
+        <nav class="nav col-12 col-sm-4">
+            <img class="logo" src="assets/logo/logo.svg" alt="logo de Alura Geek">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="#">Quienes somos</a></li>
                 <li class="nav__item" ><a class="nav__link" href="#">Política de privacidad</a></li>
@@ -109,11 +110,12 @@
                 <li class="nav__item" ><a class="nav__link" href="#">Anuncie aquí</a></li>
             </ul>
         </nav>
-        <form class="form col-12">
+        <form class="form col-12 col-sm-8">
             <p class="form__titulo">Hable con nosotros</p>
             <label class="form__label">Nombre</label>
             <input class="form__nombre" type="text">
             <textarea class="form__mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+            <input class="button button--enviar" type="submit" value="Enviar mensaje">
         </form>
         <div class="autor col-12">
             <p class="autor__nombre">Desarrollador por Ezequiel Vélez</p>

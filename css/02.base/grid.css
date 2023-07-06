@@ -10,27 +10,27 @@ xcol  -->
 */
 
 .col-1 {
-   width: 8.333333333%; 
+   width: 6.333333333%; 
    margin: 1% 1%;
 }
 
 .col-2 {
-    width: 16.666666667%; 
+    width: 14.666666667%; 
     margin: 1% 1%;
  }
 
  .col-3 {
-    width: 25%; 
+    width: 23%; 
     margin: 1% 1%;
  }
 
  .col-4 {
-    width: 33.333333333%; 
+    width: 31.333333333%; 
     margin: 1% 1%;
  }
 
  .col-5 {
-    width: 41.666666667%; 
+    width: 39.666666667%; 
     margin: 1% 1%;
  }
 
@@ -40,93 +40,93 @@ xcol  -->
  }
 
  .col-7 {
-    width: 58.333333333%; 
+    width: 56.333333333%; 
     margin: 1% 1%;
  }
 
  .col-8 {
-    width: 66.666666667%; 
+    width: 64.666666667%; 
     margin: 1% 1%;
  }
 
  .col-9 {
-    width: 75%;
+    width: 73%;
     margin: 1% 1%; 
  }
 
  .col-10 {
-    width: 83.333333333%; 
+    width: 81.333333333%; 
     margin: 1% 1%;
  }
 
  .col-11 {
-    width: 91.666666667%; 
+    width: 89.666666667%; 
     margin: 1% 1%;
  }
 
  .col-12 {
-    width: 100%; 
+    width: 98%; 
     margin: 1% 1%;
  }
 
  @media screen and (min-width:768px){
    .col-sm-1 {
-      width: 8.333333333%; 
+      width: 6.333333333%; 
       margin: 1% 1%;
    }
    
    .col-sm-2 {
-       width: 16.666666667%; 
+       width: 14.666666667%; 
        margin: 1% 1%;
     }
    
     .col-sm-3 {
-       width: 25%; 
+       width: 23%; 
        margin: 1% 1%;
     }
    
     .col-sm-4 {
-       width: 33.333333333%; 
+       width: 31.333333333%; 
        margin: 1% 1%;
     }
    
     .col-sm-5 {
-       width: 41.666666667%; 
+       width: 39.666666667%; 
        margin: 1% 1%;
     }
    
     .col-sm-6 {
-       width: 48%; 
+       width: 46%; 
        margin: 1% 1%;
     }
    
     .col-sm-7 {
-       width: 58.333333333%; 
+       width: 56.333333333%; 
        margin: 1% 1%;
     }
    
     .col-sm-8 {
-       width: 66.666666667%; 
+       width: 64.666666667%; 
        margin: 1% 1%;
     }
    
     .col-sm-9 {
-       width: 75%;
+       width: 73%;
        margin: 1% 1%; 
     }
    
     .col-sm-10 {
-       width: 83.333333333%; 
+       width: 81.333333333%; 
        margin: 1% 1%;
     }
    
     .col-sm-11 {
-       width: 91.666666667%; 
+       width: 89.666666667%; 
        margin: 1% 1%;
     }
    
     .col-sm-12 {
-       width: 100%; 
+       width: 98%; 
        margin: 1% 1%;
     }
  }

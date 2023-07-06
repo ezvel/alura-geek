@@ -1,4 +1,14 @@
 .nav__item {
     font-size: 1.18rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.nav__item:first-child{ 
+    margin-top: 1.18rem;
+}
+
+@media screen and (min-width: 768px){
+    .nav__item {
+        margin-top: 2rem;
+    }
 }

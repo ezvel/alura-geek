@@ -1,0 +1,20 @@
+.button {
+    width: 9em;
+    padding: .7em 0;
+    border-radius: 0;
+}
+
+.button--login {
+    border: 1px solid var(--azul);
+    color: var(--azul);
+    background-color: var(--blanco);
+}
+
+.button--enviar {
+    background-color: var(--azul);
+    color: #FFFFFF;
+    border: none;
+    margin-top: 1rem;
+    padding: 1.2rem 0;
+    font-weight: bold;
+}

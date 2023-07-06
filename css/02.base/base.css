@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
 :root {
     font-size: 12px;
     font-family: var(--fuente-base);
@@ -15,7 +21,8 @@ html, body {
 
 main {
     width: 100%;
-    padding: 0 calc(1rem - 1%);
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -30,6 +37,4 @@ a {
 
 footer {
     width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
