@@ -3,14 +3,18 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    width: 100%;
 }
 
-@media screen and (min-width: 768px){
-    .form {
-        margin-left: 0;
-        margin-right: 0;
-    }
 
+@media screen and (min-width: 768px) {
+    .form {
+        width: 63%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .form {
+        width: 40%;
+    }
 }

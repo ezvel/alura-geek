@@ -1,8 +1,32 @@
 .footer {
+    box-sizing: border-box;
     position: relative;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 3rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     background-color: var(--azul-claro);
+}
+
+@media screen and (min-width: 768px){
+    .footer {
+        height: 500px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        align-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .footer {
+        height: 330px;
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
 }
