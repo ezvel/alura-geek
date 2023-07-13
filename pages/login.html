@@ -19,23 +19,20 @@
 
     <link rel="stylesheet" href="../css/03.secciones/header.css">
     <link rel="stylesheet" href="../css/03.secciones/footer.css">
+    <link rel="stylesheet" href="../css/03.secciones/main.css">
     
     <link rel="stylesheet" href="../css/04.componentes/logo/logo.css">
     <link rel="stylesheet" href="../css/04.componentes/boton/button.css">
     <link rel="stylesheet" href="../css/04.componentes/busqueda/busqueda.css">
     <link rel="stylesheet" href="../css/04.componentes/busqueda/busqueda-input.css">
     <link rel="stylesheet" href="../css/04.componentes/busqueda/busqueda-button.css">
-    <link rel="stylesheet" href="../css/04.componentes/banner/banner.css">
-    <link rel="stylesheet" href="../css/04.componentes/banner/banner-titulo.css">
-    <link rel="stylesheet" href="../css/04.componentes/banner/banner-detalle.css">
-    <link rel="stylesheet" href="../css/04.componentes/banner/banner-boton.css">
-    <link rel="stylesheet" href="../css/04.componentes/productos/productos.css">
-    <link rel="stylesheet" href="../css/04.componentes/productos/productos-header.css">
-    <link rel="stylesheet" href="../css/04.componentes/productos/productos-titulo.css">
-    <link rel="stylesheet" href="../css/04.componentes/productos/producto-ver-todo.css">
-    <link rel="stylesheet" href="../css/04.componentes/productos/productos-producto.css">
-    <link rel="stylesheet" href="../css/04.componentes/producto/producto.css">
-    <link rel="stylesheet" href="../css/04.componentes/producto/producto-imagen.css">
+    <link rel="stylesheet" href="../css/04.componentes/form-login/form-login.css">
+    <link rel="stylesheet" href="../css/04.componentes/form-login/form-login-container.css">
+    <link rel="stylesheet" href="../css/04.componentes/form-login/form-login-titulo.css">
+    <link rel="stylesheet" href="../css/04.componentes/form-login/form-login-input.css">
+    <link rel="stylesheet" href="../css/04.componentes/form-login/form-login-email.css">
+    <link rel="stylesheet" href="../css/04.componentes/form-login/form-login-password.css">
+    <link rel="stylesheet" href="../css/04.componentes/form-login/form-login-enviar.css">
     <link rel="stylesheet" href="../css/04.componentes/nav/nav.css">
     <link rel="stylesheet" href="../css/04.componentes/nav/nav-list.css">
     <link rel="stylesheet" href="../css/04.componentes/nav/nav-item.css">
@@ -54,17 +51,24 @@
 </head>
 <body>
     <header class="header">
-        <img class="logo" src="assets/logo/logo.svg" alt="logo de Alura Geek">
+        <img class="logo--header" src="../assets/logo/logo.svg" alt="logo de Alura Geek">
         <button class="button button--login">Login</button>
         <form class="busqueda">
             <input class="busqueda__input" type="search" placeholder="¿Qué deseas buscar?">
             <button class="busqueda__button"><img class="busqueda__icon" src="../assets/iconos/search.svg"></button>
         </form>
     </header>
-    <main>
-
+    <main class="main-login">
+        <form class="form-login">
+            <fieldset class="form-login__container">
+                <legend class="form-login__titulo">Iniciar Sesión</legend>
+                <input class="form-login__input form-login__email" type="email" placeholder="Escriba su correo electrónico">
+                <input class="form-login__input form-login__password" type="password" placeholder="Escriba su contraseña">
+                <input class="form-login__enviar" type="submit" value="Entrar">
+            </fieldset>
+        </form>
     </main>
-    <footer class="footer row">
+    <footer class="footer row margin-top-0">
         <img class="logo" src="../assets/logo/logo.svg" alt="logo de Alura Geek">
         <nav class="nav">
             <ul class="nav__list">

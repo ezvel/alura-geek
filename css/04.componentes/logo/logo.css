@@ -1,4 +1,5 @@
 .logo--header {
+    width: 120px;
     order: 1;
 }
 /*
@@ -15,3 +16,10 @@
     }
 } 
 */
+
+@media screen and (min-width: 768px) {
+    .logo--header {
+        width: 200px;
+        order: 1;
+    }
+}

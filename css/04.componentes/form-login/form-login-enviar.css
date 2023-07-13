@@ -1,0 +1,16 @@
+.form-login__enviar {
+    width: 100%;
+    height: 4.5rem;
+    margin-bottom: 1.5em;
+    background-color: var(--azul);
+    border: 1px solid var(--azul);
+    color: var(--blanco);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-login__enviar:hover {
+    background-color: var(--blanco);    
+    border: 1px solid var(--azul);
+    color: var(--azul);
+}
