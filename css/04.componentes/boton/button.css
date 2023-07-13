@@ -7,6 +7,9 @@
 }
 
 .button--login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid var(--azul);
     color: var(--azul);
     background-color: var(--blanco);
