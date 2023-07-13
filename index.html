@@ -22,6 +22,9 @@
     
     <link rel="stylesheet" href="css/04.componentes/logo/logo.css">
     <link rel="stylesheet" href="css/04.componentes/boton/button.css">
+    <link rel="stylesheet" href="css/04.componentes/busqueda/busqueda.css">
+    <link rel="stylesheet" href="css/04.componentes/busqueda/busqueda-input.css">
+    <link rel="stylesheet" href="css/04.componentes/busqueda/busqueda-button.css">
     <link rel="stylesheet" href="css/04.componentes/banner/banner.css">
     <link rel="stylesheet" href="css/04.componentes/banner/banner-titulo.css">
     <link rel="stylesheet" href="css/04.componentes/banner/banner-detalle.css">
@@ -53,7 +56,10 @@
     <header class="header">
         <img class="logo" src="assets/logo/logo.svg" alt="logo de Alura Geek">
         <button class="button button--login">Login</button>
-        <img src="assets/iconos/busqueda.png">
+        <form class="busqueda">
+            <input class="busqueda__input" type="search" placeholder="¿Qué deseas buscar?">
+            <button class="busqueda__button"><img class="busqueda__icon" src="assets/iconos/search.svg"></button>
+        </form>
     </header>
     <section class="banner">
         <h2 class="banner__titulo">Febrero Promocional</h2>

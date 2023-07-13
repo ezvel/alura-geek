@@ -1,0 +1,17 @@
+.busqueda {
+    position: relative;
+    height: 3.5rem;
+    width: 0%;
+    order: 3;
+}
+
+@media screen and (min-width: 768px){
+    .busqueda {
+        order: 2;
+        justify-content: start;
+        margin-right: auto;
+        margin-left: 3rem;
+        width: 32%;
+        min-width: 300px;
+    }
+}
