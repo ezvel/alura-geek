@@ -321,11 +321,11 @@
                 <li class="nav__item" ><a class="nav__link" href="#">Anuncie aquí</a></li>
             </ul>
         </nav>
-        <form class="form">
+        <form class="form" id="form-mensaje">
             <p class="form__titulo">Hable con nosotros</p>
             <label class="form__label">Nombre</label>
-            <input class="form__nombre" type="text">
-            <textarea class="form__mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+            <input class="form__nombre" id="nombre" type="text">
+            <textarea class="form__mensaje" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
             <input class="button button--enviar" type="submit" value="Enviar mensaje">
         </form>
         <div class="autor">
@@ -334,6 +334,9 @@
         </div>
     </footer>
 
+    <script src="javascript/validaciones.js"></script>
+    <script src="javascript/app.js"></script>
+    <script src="javascript/testing.js"></script>
     <script src="javascript/agregar_productos.js"></script>
 </body>
 </html>

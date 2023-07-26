@@ -1,0 +1,23 @@
+{
+    "administradores": [
+        {
+            "usuario": "Martin",
+            "password": "1234"
+        },
+        {
+            "usuario": "Lorena",
+            "password": "admin"
+        }
+    ],
+
+    "productos": [
+        
+    ],
+
+    "mensajes": [
+        {
+            "nombre": "Juan",
+            "mensaje": "Hola, quería consultar si había todavía stock para la camisa Alari"
+        }
+    ]
+}
