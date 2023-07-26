@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+<!--Hojas de estilo css-->
+<link rel="stylesheet" href="../css/01.variables/fuentes.css">
+<link rel="stylesheet" href="../css/01.variables/colores.css">
+
+<link rel="stylesheet" href="../css/02.base/normalize.css">
+<link rel="stylesheet" href="../css/02.base/base.css">
+<link rel="stylesheet" href="../css/02.base/grid.css">
+
+<link rel="stylesheet" href="../css/03.secciones/header.css">
+<link rel="stylesheet" href="../css/03.secciones/footer.css">
+
+<link rel="stylesheet" href="../css/04.componentes/logo/logo.css">
+<link rel="stylesheet" href="../css/04.componentes/boton/button.css">
+<link rel="stylesheet" href="../css/04.componentes/busqueda/busqueda.css">
+<link rel="stylesheet" href="../css/04.componentes/busqueda/busqueda-input.css">
+<link rel="stylesheet" href="../css/04.componentes/busqueda/busqueda-button.css">
+<link rel="stylesheet" href="../css/04.componentes/banner/banner.css">
+<link rel="stylesheet" href="../css/04.componentes/banner/banner-titulo.css">
+<link rel="stylesheet" href="../css/04.componentes/banner/banner-detalle.css">
+<link rel="stylesheet" href="../css/04.componentes/banner/banner-boton.css">
+<link rel="stylesheet" href="../css/04.componentes/productos/productos.css">
+<link rel="stylesheet" href="../css/04.componentes/productos/productos-header.css">
+<link rel="stylesheet" href="../css/04.componentes/productos/productos-titulo.css">
+<link rel="stylesheet" href="../css/04.componentes/productos/producto-ver-todo.css">
+<link rel="stylesheet" href="../css/04.componentes/productos/productos-producto.css">
+<link rel="stylesheet" href="../css/04.componentes/producto/producto.css">
+<link rel="stylesheet" href="../css/04.componentes/producto/producto-imagen.css">
+<link rel="stylesheet" href="../css/04.componentes/nav/nav.css">
+<link rel="stylesheet" href="../css/04.componentes/nav/nav-list.css">
+<link rel="stylesheet" href="../css/04.componentes/nav/nav-item.css">
+<link rel="stylesheet" href="../css/04.componentes/form/form.css">
+<link rel="stylesheet" href="../css/04.componentes/form/form-titulo.css">
+<link rel="stylesheet" href="../css/04.componentes/form/form-label.css">
+<link rel="stylesheet" href="../css/04.componentes/form/form-nombre.css">
+<link rel="stylesheet" href="../css/04.componentes/form/form-mensaje.css">
+<link rel="stylesheet" href="../css/04.componentes/autor/autor.css">
+<link rel="stylesheet" href="../css/04.componentes/autor/autor-nombre.css">
+<link rel="stylesheet" href="../css/04.componentes/autor/autor-anio.css">
+
+<link rel="stylesheet" href="../css/05.utilidades/utilidades.css">
+
+    <title>Alura Geek</title>
+</head>
+<body>
+    <header class="header">
+        <img class="logo--header" src="../../assets/logo/logo.svg" alt="logo de Alura Geek">
+        <form class="busqueda">
+            <input class="busqueda__input" type="search" placeholder="¿Qué deseas buscar?">
+            <button class="busqueda__button"><img class="busqueda__icon" src="../../assets/iconos/search.svg"></button>
+        </form>
+    </header>
+    <main>
+        <article class="productos row" id="productos-starwars">
+            <div class="productos__header col-12">
+                <h2 class="productos__titulo">Todos los productos</h2>
+            </div>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-sw-1.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Producto XYZ</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-sw-2.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Producto XYZ</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-sw-3.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Producto XYZ</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-sw-4.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Producto XYZ</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-sw-5.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Producto XYZ</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-sw-6.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Producto XYZ</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-cls-1.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Control XYZ</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-cls-2.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Control y consola XYZ</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-cls-3.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Consola XYZ</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-cls-4.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Control XYZ</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-cls-5.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Consola XYZ</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-cls-6.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Game Boy Color XYZ</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-diversos-1.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Camisa Alari</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../../assets/productos/producto-diversos-2.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Camisa SNES</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-diversos-3.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Control y consola XYZ</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-diversos-4.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Control y consola XYZ</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-diversos-5.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Control y consola XYZ</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
+                <header class="producto__header">
+                    <img class="producto__imagen" src="../assets/productos/producto-diversos-6.png">
+                </header>
+                <section class="producto__content">
+                    <h2 class="producto__nombre">Producto XYZ</h2>
+                    <p class="producto__precio">
+                        $60.00
+                    </p>
+                    <a class="producto__link" href="#">#111111</a>
+                </section>
+            </article>
+        </article>
+    </main>
+    <footer class="footer row">
+        <img class="logo" src="../../assets/logo/logo.svg" alt="logo de Alura Geek">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">Quienes somos</a></li>
+                <li class="nav__item" ><a class="nav__link" href="#">Política de privacidad</a></li>
+                <li class="nav__item" ><a class="nav__link" href="#">Programa de fidelidad</a></li>
+                <li class="nav__item" ><a class="nav__link" href="#">Nuestras tiendas</a></li>
+                <li class="nav__item" ><a class="nav__link" href="#">Quiero ser franquiciado</a></li>
+                <li class="nav__item" ><a class="nav__link" href="#">Anuncie aquí</a></li>
+            </ul>
+        </nav>
+        <form class="form">
+            <p class="form__titulo">Hable con nosotros</p>
+            <label class="form__label">Nombre</label>
+            <input class="form__nombre" type="text">
+            <textarea class="form__mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+            <input class="button button--enviar" type="submit" value="Enviar mensaje">
+        </form>
+        <div class="autor">
+            <p class="autor__nombre">Desarrollador por Ezequiel Vélez</p>
+            <p class="autor__anio">2021</p>
+        </div>
+    </footer>
+
+    <script src="../javascript/agregar_productos.js"></script>
+</body>
+</html>
