@@ -1,23 +1,42 @@
 {
-    "administradores": [
-        {
-            "usuario": "Martin",
-            "password": "1234"
-        },
-        {
-            "usuario": "Lorena",
-            "password": "admin"
-        }
-    ],
-
-    "productos": [
-        
-    ],
-
-    "mensajes": [
-        {
-            "nombre": "Juan",
-            "mensaje": "Hola, quería consultar si había todavía stock para la camisa Alari"
-        }
-    ]
+  "administradores": [
+    {
+      "id": 1,
+      "usuario": "Martin",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "usuario": "Lorena",
+      "password": "admin"
+    }
+  ],
+  "productos": [],
+  "mensajes": [
+    {
+      "id": 1,
+      "nombre": "Juan",
+      "mensaje": "Hola, quería consultar si había todavía stock para la camisa Alari"
+    },
+    {
+      "nombre": "Pablo",
+      "mensaje": "Hola, buenas tardes. Quería consultar si hay stock de Camisas SNES",
+      "id": 2
+    },
+    {
+      "nombre": "José",
+      "mensaje": "Hola, buenas tardes. Quería consultar si hay stock de Camisas SNES",
+      "id": 3
+    },
+    {
+      "nombre": "Ana",
+      "mensaje": "Hola, buenas tardes. Quería consultar si hay stock de Camisas SNES",
+      "id": 4
+    },
+    {
+      "nombre": "Juan",
+      "mensaje": "Hola que tal, quería consultar si los precios están actualizados",
+      "id": 5
+    }
+  ]
 }

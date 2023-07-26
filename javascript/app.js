@@ -15,8 +15,10 @@ $formularioMensaje.addEventListener("submit", (e) => {
 
     
     if(!hayErrores) {
-        console.log("No hay errores");
+        creaMensaje(datos);
+        vaciarCamposFormularioMensaje();
     }
     
 })
+
 
