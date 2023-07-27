@@ -58,17 +58,17 @@
         </form>
     </header>
     <main class="main-login">
-        <form class="form-login">
+        <form class="form-login" id="form-login">
             <fieldset class="form-login__container">
                 <legend class="form-login__titulo">Iniciar Sesión</legend>
-                <input class="form-login__input form-login__email" type="email" placeholder="Escriba su correo electrónico">
-                <input class="form-login__input form-login__password" type="password" placeholder="Escriba su contraseña">
-                <a class="form-login__enviar" href="administrador.html">Entrar</a>
+                <input class="form-login__input form-login__email" id="email" type="email" placeholder="Escriba su correo electrónico">
+                <input class="form-login__input form-login__password" id="password" type="password" placeholder="Escriba su contraseña">
+                <input type="submit" class="form-login__enviar" value="Entrar">
             </fieldset>
         </form>
     </main>
     <footer class="footer row margin-top-0">
-        <img class="logo" src="../assets/logo/logo.svg" alt="logo de Alura Geek">
+        <img class="logo" src="assets/logo/logo.svg" alt="logo de Alura Geek">
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="#">Quienes somos</a></li>
@@ -79,11 +79,11 @@
                 <li class="nav__item" ><a class="nav__link" href="#">Anuncie aquí</a></li>
             </ul>
         </nav>
-        <form class="form">
+        <form class="form" id="form-mensaje">
             <p class="form__titulo">Hable con nosotros</p>
             <label class="form__label">Nombre</label>
-            <input class="form__nombre" type="text">
-            <textarea class="form__mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
+            <input class="form__nombre" id="nombre" type="text">
+            <textarea class="form__mensaje" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
             <input class="button button--enviar" type="submit" value="Enviar mensaje">
         </form>
         <div class="autor">
@@ -92,6 +92,12 @@
         </div>
     </footer>
 
-    <script src="javascript/agregar_productos.js"></script>
+    <script src="../javascript/validaciones.js"></script>
+    <script src="../javascript/dom.js"></script>
+    <script src="../javascript/app.js"></script>
+    <script src="../javascript/testing.js"></script>
+    <script src="../javascript/agregar_productos.js"></script>
+    <script src="../javascript/crea_mensaje.js"></script>
+    <script src="../javascript/leer_usuarios.js"></script>
 </body>
 </html>

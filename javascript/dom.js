@@ -5,3 +5,11 @@ const vaciarCamposFormularioMensaje = () => {
     $nombre.value = "";
     $mensaje.value = "";
 }
+
+const vaciarCamposFormularioLogin = () => {
+    const $email = document.getElementById("email");
+    const $password = document.getElementById("password");
+
+    $email.value = "";
+    $password.value = "";
+}

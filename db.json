@@ -2,13 +2,13 @@
   "administradores": [
     {
       "id": 1,
-      "usuario": "Martin",
-      "password": "1234"
+      "email": "martin@gmail.com",
+      "password": "asdsadaada1231321"
     },
     {
       "id": 2,
-      "usuario": "Lorena",
-      "password": "admin"
+      "email": "lorena@gmail.com",
+      "password": "adminsadsda12321312"
     }
   ],
   "productos": [],
