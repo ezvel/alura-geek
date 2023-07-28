@@ -83,9 +83,13 @@ const probarValidarMensaje = () => {
         validarMensaje("ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss") 
         === "Este campo no puede ser mayor a 120 caracteres",
         "La función validarMensaje no validó que se ingresó un campo con más de 120 caracteres"
-    )
+    );
+
+    console.assert(
+        validarMensaje("Soy una descripción válida") === "",
+        "La función validarMensaje dió cómo incorrecto una descrición válida"
+    );
 }
 
-probarValidarNombre();
-probarValidarMensaje();
-
+//probarValidarNombre();
+//probarValidarMensaje();

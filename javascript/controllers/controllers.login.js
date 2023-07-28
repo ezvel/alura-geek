@@ -11,6 +11,7 @@ $formularioLogin.addEventListener("submit", async(e) => {
         password: password
     }
 
+
     const hayErrores = validarFormularioLogin(datosAValidar);
 
     
@@ -20,7 +21,9 @@ $formularioLogin.addEventListener("submit", async(e) => {
             password: password.trim()
         }
 
+        
         const existe = await validarUsuario(datosValidados);
+        
         
         if(existe) {
             window.location.href = "../pages/administrador.html";

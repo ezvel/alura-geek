@@ -11,7 +11,6 @@
       "password": "adminsadsda12321312"
     }
   ],
-
   "mensajes": [
     {
       "id": 1,
@@ -37,6 +36,16 @@
       "nombre": "Juan",
       "mensaje": "Hola que tal, quería consultar si los precios están actualizados",
       "id": 5
+    },
+    {
+      "nombre": "Pablo",
+      "mensaje": "Buen día",
+      "id": 6
+    },
+    {
+      "nombre": "José",
+      "mensaje": "Consulto si hay otras caregorías",
+      "id": 7
     }
   ]
 }
