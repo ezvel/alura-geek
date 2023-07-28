@@ -21,7 +21,7 @@ const probarValidarNombre = () => {
     )
 
     console.assert(
-        validarNombre("sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss") === "Este campo no puede ser mayor a 40 caracteres",
+        validarNombre("sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss", 40) === "Este campo no puede ser mayor a 40 caracteres",
         "El campo validarNombre no validó que se ingresó un campo mayor a 40 caracteres"
     )
 

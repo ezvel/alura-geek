@@ -6,6 +6,12 @@
     width: 100%;
 }
 
+.form--login, .form--agregar-producto {
+    width: 50%;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @media screen and (min-width: 768px) {
     .form {

@@ -1,4 +1,4 @@
-.form-login__container {
+.form--login__container, .form--agregar-producto__container {
     display: flex;
     flex-direction: column;
     justify-content: center;

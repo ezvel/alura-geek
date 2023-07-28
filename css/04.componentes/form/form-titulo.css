@@ -1,3 +1,18 @@
 .form__titulo {
     font-weight: bold;
 }
+
+.form--login__titulo {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1.3em;
+}
+
+.form--agregar-producto__titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.3em;
+    margin-right: auto;
+}

@@ -1,10 +1,10 @@
-const validarNombre = (nombre) => {
+const validarNombre = (nombre, max) => {
     if(nombre.toString().trim().length === 0) {
         return "Este campo no puede estar vacío";
     } else if (!/^[a-z\sáéíóúñ]+$/i.test(nombre)) {
         return "Este campo solo debe contener letras";
-    } else if (nombre.length > 40) {
-        return "Este campo no puede ser mayor a 40 caracteres";
+    } else if (nombre.length > max) {
+        return "Este campo no puede ser mayor a " + max + " caracteres";
     } else {
         return "";
     }
@@ -23,7 +23,7 @@ const validarMensaje = (mensaje) => {
 const validarEmail = (email) => {
     if(email.toString().trim().length === 0) {
         return "Este campo no puede estar vacío";
-    } else if (!/^[a-zA-Z0-9-_.]+@[a-z]+(\.[a-z]{1,4}){1,2}$/.test(email)) {
+    } else if (!/^[a-zA-Z0-9-_\.]+@[a-z]+(\.[a-z]{1,4}){1,2}$/.test(email)) {
         return "El campo correo tiene que tener un formato válido";
     } else {
         return "";
@@ -44,10 +44,47 @@ const validarPassword = (password) => {
 }
 
 
+const validarUrl = (url) => {
+    if(url.toString().trim().length === 0) {
+        return "Este campo no puede estar vacío";
+    } else {
+        return "";
+    }
+}
+
+
+const validarPrecio = (precio) => {
+    if(precio.toString().trim().length === 0) {
+        return "Este campo no puede estar vacío";
+    } 
+    
+    if(/^[0-9]+$/.test(precio)) {
+        return "";
+    } 
+    
+    if(!/^[0-9]+\.[0-9]+/.test(precio)) {
+        return "Este campo debe tener solo números";
+    }
+
+    return "";
+}
+
+
+const validarDescripcion = (descripcion) => {
+    if(descripcion.toString().trim().length === 0) {
+        return "Este campo no puede estar vacío";
+    } else if (descripcion.length > 150) {
+        return "Este campo no puede ser mayor a 150 caracteres";
+    } else {
+        return "";
+    }
+}
+
+
 const validarFormularioMensaje = (datos) => {
     const {nombre, mensaje} = datos;
     
-    const errorNombre = validarNombre(nombre);
+    const errorNombre = validarNombre(nombre, 40);
     const errorMensaje = validarMensaje(mensaje);
 
     const errores = {
@@ -78,6 +115,8 @@ const validarFormularioLogin = (datos) => {
 }
 
 
+
+
 const validarUsuario = async(datos) => {
     const usuariosBbddUsuarioLogin = await leerUsuarios(datos);
 
@@ -94,11 +133,37 @@ const validarUsuario = async(datos) => {
 }
 
 
+const validarFormularioAgregarProducto = (datos) => {
+    const {url, categoria, nombre, precio, descripcion} = datos;
+
+    const errorUrl = validarUrl(url);
+    const errorNombre = validarNombre(nombre, 20);
+    const errorPrecio = validarPrecio(precio);
+    const errorDescripcion = validarDescripcion(descripcion);
+
+    const errores = {
+        url: errorUrl,
+        nombreProducto: errorNombre,
+        precio: errorPrecio,
+        descripcion: errorDescripcion
+    }
+
+    const hayErrores = manejarErrores(errores) > 0;
+
+    return hayErrores;
+
+}
+
+
 const manejarErrores = (errores) => {
     const errorNombre = errores.nombre;
     const errorMensaje = errores.mensaje;
     const errorEmail = errores.email;
     const errorPassword = errores.password;
+    const errorNombreProducto = errores.nombreProducto;
+    const errorUrl = errores.url
+    const errorPrecio = errores.precio;
+    const errorDescripcion = errores.descripcion;
 
     let cantidadErrores = 0;
 
@@ -168,6 +233,75 @@ const manejarErrores = (errores) => {
         })
 
         cantidadErrores++;
+    }
+
+    if(errorUrl) {
+        const $url = document.getElementById("url-imagen");
+
+        $url.value = "";
+        $url.placeholder = errorUrl;
+        $url.style.color = "red";
+        $url.style.border = "1px solid red";
+
+        $url.addEventListener("click", () => {
+            $url.placeholder = "Url de la imagen";
+            $url.style.color = "";
+            $url.style.border = "";
+        })
+        
+        cantidadErrores++;
+    }
+
+    if(errorNombreProducto) {
+        const $nombre = document.getElementById("nombre-producto");
+
+        $nombre.value = "";
+        $nombre.placeholder = errorNombreProducto;
+        $nombre.style.color = "red";
+        $nombre.style.border = "1px solid red";
+
+        $nombre.addEventListener("click", () => {
+            $nombre.placeholder = "Nombre del producto";
+            $nombre.style.color = "";
+            $nombre.style.border = "";
+        });
+        
+        cantidadErrores++;
+    }
+
+    if(errorPrecio) {
+        const $precio = document.getElementById("precio-producto");
+
+        $precio.value = "";
+        $precio.placeholder = errorPrecio;
+        $precio.style.color = "red";
+        $precio.style.border = "1px solid red";
+
+        $precio.addEventListener("click", () => {
+            $precio.placeholder = "Precio del producto";
+            $precio.style.color = "";
+            $precio.style.border = "";
+        });
+
+        cantidadErrores++;
+    }
+
+
+    if(errorDescripcion) {
+        const $descripcion = document.getElementById("descripcion-producto");
+
+        $descripcion.value = "";
+        $descripcion.placeholder = errorDescripcion;
+        $descripcion.style.color = "red";
+        $descripcion.style.border = "1px solid red";
+
+        $descripcion.addEventListener("click", () => {
+            $descripcion.placeholder = "Descripción del producto";
+            $descripcion.style.color = "";
+            $descripcion.style.border = "";
+        });
+        
+        cantidadErrores++;   
     }
 
     return cantidadErrores;

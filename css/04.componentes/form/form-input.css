@@ -1,0 +1,11 @@
+.form--login__input, .form--agregar-producto__input {
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 1.5em;
+    border: none;
+    background-color: #FFF;
+}
+
+.form--agregar-producto__input--descripcion {
+    height: 5rem;
+}

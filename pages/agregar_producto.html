@@ -12,7 +12,7 @@
     <!--Hojas de estilo css-->
     <link rel="stylesheet" href="../css/01.variables/fuentes.css">
     <link rel="stylesheet" href="../css/01.variables/colores.css">
-    
+
     <link rel="stylesheet" href="../css/02.base/normalize.css">
     <link rel="stylesheet" href="../css/02.base/base.css">
     <link rel="stylesheet" href="../css/02.base/grid.css">
@@ -20,13 +20,13 @@
     <link rel="stylesheet" href="../css/03.secciones/header.css">
     <link rel="stylesheet" href="../css/03.secciones/footer.css">
     <link rel="stylesheet" href="../css/03.secciones/main.css">
-    
+
     <link rel="stylesheet" href="../css/04.componentes/logo/logo.css">
     <link rel="stylesheet" href="../css/04.componentes/boton/button.css">
     <link rel="stylesheet" href="../css/04.componentes/busqueda/busqueda.css">
     <link rel="stylesheet" href="../css/04.componentes/busqueda/busqueda-input.css">
     <link rel="stylesheet" href="../css/04.componentes/busqueda/busqueda-button.css">
-    
+
     <link rel="stylesheet" href="../css/04.componentes/nav/nav.css">
     <link rel="stylesheet" href="../css/04.componentes/nav/nav-list.css">
     <link rel="stylesheet" href="../css/04.componentes/nav/nav-item.css">
@@ -48,23 +48,30 @@
 </head>
 <body>
     <header class="header">
-        <img class="logo--header" src="../assets/logo/logo.svg" alt="logo de Alura Geek">
+        <img class="logo--header" src="../../assets/logo/logo.svg" alt="logo de Alura Geek">
         <form class="busqueda">
             <input class="busqueda__input" type="search" placeholder="¿Qué deseas buscar?">
-            <button class="busqueda__button"><img class="busqueda__icon" src="../assets/iconos/search.svg"></button>
+            <button class="busqueda__button"><img class="busqueda__icon" src="../../assets/iconos/search.svg"></button>
         </form>
     </header>
-    <main class="main-login">
-        <form class="form--login" id="form-login">
-            <fieldset class="form--login__container">
-                <legend class="form--login__titulo">Iniciar Sesión</legend>
-                <input class="form--login__input" id="email" type="email" placeholder="Escriba su correo electrónico">
-                <input class="form--login__input" id="password" type="password" placeholder="Escriba su contraseña">
-                <input type="submit" class="form--login__enviar" value="Entrar">
+    <main class="main-agregar-producto">
+        <form class="form--agregar-producto" id="form-agregar-producto">
+            <fieldset class="form--agregar-producto__container">
+                <legend class="form--agregar-producto__titulo">Agregar nuevo producto</legend>
+                <input class="form--agregar-producto__input"  type="url" id="url-imagen" placeholder="Url de la imagen">
+                <select class="form--agregar-producto__input" name="categoria" id="categoria-producto">
+                    <option value="consolas">Consolas</option>
+                    <option value="star-wars">Star Wars</option>
+                    <option value="diversos">Diversos</option>
+                </select>
+                <input class="form--agregar-producto__input" id="nombre-producto" type="text" placeholder="Nombre del produto">
+                <input class="form--agregar-producto__input" id="precio-producto" type="text" placeholder="Precio del produto">
+                <input class="form--agregar-producto__input form--agregar-producto__input--descripcion" id="descripcion-producto" type="text" placeholder="Descripción del produto">
+                <input type="submit" class="form--agregar-producto__enviar" value="Agregar producto">
             </fieldset>
         </form>
     </main>
-    <footer class="footer row margin-top-0">
+    <footer class="footer row  margin-top-0">
         <img class="logo" src="assets/logo/logo.svg" alt="logo de Alura Geek">
         <nav class="nav">
             <ul class="nav__list">
@@ -91,10 +98,10 @@
 
     <script src="../javascript/validaciones.js"></script>
     <script src="../javascript/dom.js"></script>
-    <script src="../javascript/app.js"></script>
+    <script src="../javascript/controllers/controllers.mensaje.js"></script>
+    <script src="../javascript/controllers/controllers.productos.js"></script>
     <script src="../javascript/testing.js"></script>
     <script src="../javascript/agregar_productos.js"></script>
-    <script src="../javascript/crea_mensaje.js"></script>
-    <script src="../javascript/leer_usuarios.js"></script>
+    <script src="../javascript/services/services.mensaje.js"></script>
 </body>
 </html>
