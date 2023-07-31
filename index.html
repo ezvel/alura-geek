@@ -72,7 +72,7 @@
         <article class="productos row" id="productos-starwars">
             <div class="productos__header col-12">
                 <h2 class="productos__titulo">Star Wars</h2>
-                <a href="#" class="productos__ver-todo">Ver todo</a>
+                <a href="pages/ver_todo.html" class="productos__ver-todo"><span>Ver todo</span><img src="assets/iconos/arrow.svg"></a>
             </div>
         </article>
         
@@ -80,20 +80,20 @@
         <article class="productos row" id="productos-consolas">
             <div class="productos__header col-12">
                 <h2 class="productos__titulo">Consolas</h2>
-                <a href="#" class="productos__ver-todo">Ver todo</a>
+                <a href="pages/ver_todo.html" class="productos__ver-todo"><span>Ver todo</span><img src="assets/iconos/arrow.svg"></a>
             </div>
         </article>
     
         <article class="productos row" id="productos-diversos">
             <div class="productos__header col-12">
                 <h2 class="productos__titulo">Diversos</h2>
-                <a href="#" class="productos__ver-todo">Ver todo</a>
+                <a href="pages/ver_todo.html" class="productos__ver-todo"><span>Ver todo</span><img src="assets/iconos/arrow.svg"></a>
             </div>
         </article>
     </main>
     
     <footer class="footer row">
-        <img class="logo" src="assets/logo/logo.svg" alt="logo de Alura Geek">
+        <a href="index.html"><img class="logo" src="assets/logo/logo.svg" alt="logo de Alura Geek"></a>
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="#">Quienes somos</a></li>
@@ -106,8 +106,7 @@
         </nav>
         <form class="form" id="form-mensaje">
             <p class="form__titulo">Hable con nosotros</p>
-            <label class="form__label">Nombre</label>
-            <input class="form__nombre" id="nombre" type="text">
+            <input class="form__nombre" id="nombre" type="text" placeholder="Escribe tu nombre">
             <textarea class="form__mensaje" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>
             <input class="button button--enviar" type="submit" value="Enviar mensaje">
         </form>

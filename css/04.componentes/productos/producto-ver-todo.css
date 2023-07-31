@@ -1,0 +1,12 @@
+.productos__ver-todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    color: var(--azul);
+    font-weight: bold;
+}
+
+.productos__ver-todo span {
+    margin-right: .2em;
+}
