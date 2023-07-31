@@ -1,4 +1,4 @@
-.main-login, .main-agregar-producto {
+.main-login, .main-agregar-producto, .main-modificar-producto {
     box-sizing: border-box;
     padding-top: 100px;
     padding-bottom: 100px;

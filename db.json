@@ -11,6 +11,64 @@
       "password": "adminsadsda12321312"
     }
   ],
+  "productos": [
+    {
+      "id": 1,
+      "url": "https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80",
+      "categoria": "star-wars",
+      "nombre": "Taza stormrtrooper",
+      "precio": 1500,
+      "Descripción": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus dicta! Minus praesentium et, explicabo quos ipsum, ullam veniam nesciunt laudantium, perspiciatis dolorem aliquam expedita? Soluta ipsum id repellat praesentium."
+    },
+    {
+      "url": "https://images.pexels.com/photos/4310574/pexels-photo-4310574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "star-wars",
+      "nombre": "Muñeco Darth vader",
+      "precio": "1500",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus dicta! Minus praesentium et, explicabo quos ipsum, ullam veniam ne",
+      "id": 2
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1609518833016-e36fa49dbd55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80",
+      "categoria": "star-wars",
+      "nombre": "Strormtroopers",
+      "precio": "1500",
+      "descripcion": "\"Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus dicta! Minus praesentium et, explicabo quos ipsum, ullam veniam ne\"",
+      "id": 4
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1621627107348-85f0ecd3f633?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGVnbyUyMGRhcnRoJTIwdmFkZXJ8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+      "categoria": "star-wars",
+      "nombre": "Lego Darth Vader",
+      "precio": "2300",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum veniam quod molestiae quidem sequi tempore, e",
+      "id": 5
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1623990672451-13d0fd9780e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      "categoria": "consolas",
+      "nombre": "Gameboy",
+      "precio": "4000",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus at cumque, magni dolor perferendis repellat necessitatibus omnis",
+      "id": 6
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1593118247619-e2d6f056869e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+      "categoria": "consolas",
+      "nombre": "joystick ps",
+      "precio": "3500",
+      "descripcion": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
+      "id": 7
+    },
+    {
+      "url": "https://images.pexels.com/photos/17214933/pexels-photo-17214933/free-photo-of-vintage-monitor-coleccion-grafico.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "diversos",
+      "nombre": "Cartas",
+      "precio": "500",
+      "descripcion": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
+      "id": 8
+    }
+  ],
   "mensajes": [
     {
       "id": 1,

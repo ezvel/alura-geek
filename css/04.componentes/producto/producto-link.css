@@ -1,0 +1,8 @@
+.producto__link {
+    color: var(--azul);
+    font-weight: bold;
+}
+
+.producto__link:hover {
+    text-decoration: underline;
+}

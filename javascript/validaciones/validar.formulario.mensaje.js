@@ -1,7 +1,7 @@
 const validarNombre = (nombre, max) => {
     if(nombre.toString().trim().length === 0) {
         return "Este campo no puede estar vacío";
-    } else if (!/^[a-z\sáéíóúñ]+$/i.test(nombre)) {
+    } else if (!/^[A-z\sáéíóúñ]+$/i.test(nombre)) {
         return "Este campo solo debe contener letras";
     } else if (nombre.length > max) {
         return "Este campo no puede ser mayor a " + max + " caracteres";

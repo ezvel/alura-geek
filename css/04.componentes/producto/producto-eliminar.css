@@ -1,0 +1,9 @@
+.producto__eliminar {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+

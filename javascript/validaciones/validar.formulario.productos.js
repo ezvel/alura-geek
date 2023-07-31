@@ -35,8 +35,9 @@ const validarDescripcion = (descripcion) => {
 }
 
 
-const validarFormularioAgregarProducto = (datos) => {
+const validarFormularioProducto = (datos) => {
     const {url, categoria, nombre, precio, descripcion} = datos;
+
 
     const errorUrl = validarUrl(url);
     const errorNombre = validarNombre(nombre, 20);

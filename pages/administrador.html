@@ -35,7 +35,10 @@
 <link rel="stylesheet" href="../css/04.componentes/productos/producto-ver-todo.css">
 <link rel="stylesheet" href="../css/04.componentes/productos/productos-producto.css">
 <link rel="stylesheet" href="../css/04.componentes/producto/producto.css">
+<link rel="stylesheet" href="../css/04.componentes/producto/producto-header.css">
 <link rel="stylesheet" href="../css/04.componentes/producto/producto-imagen.css">
+<link rel="stylesheet" href="../css/04.componentes/producto/producto-editar.css">
+<link rel="stylesheet" href="../css/04.componentes/producto/producto-eliminar.css">
 <link rel="stylesheet" href="../css/04.componentes/nav/nav.css">
 <link rel="stylesheet" href="../css/04.componentes/nav/nav-list.css">
 <link rel="stylesheet" href="../css/04.componentes/nav/nav-item.css">
@@ -54,234 +57,18 @@
 </head>
 <body>
     <header class="header">
-        <img class="logo--header" src="../../assets/logo/logo.svg" alt="logo de Alura Geek">
+        <a href="administrador.html"><img class="logo--header" src="../../assets/logo/logo.svg" alt="logo de Alura Geek"></a>
         <form class="busqueda">
             <input class="busqueda__input" type="search" placeholder="¿Qué deseas buscar?">
             <button class="busqueda__button"><img class="busqueda__icon" src="../../assets/iconos/search.svg"></button>
         </form>
     </header>
     <main>
-        <section class="productos row">
+        <section class="productos row" id="productos">
             <div class="productos__header col-12">
                 <h2 class="productos__titulo">Todos los productos</h2>
                 <a class="button button--agregar-producto" href="agregar_producto.html">Agregar producto</a>
             </div>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-sw-1.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Producto XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-sw-2.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Producto XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-sw-3.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Producto XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-sw-4.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Producto XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-sw-5.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Producto XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-sw-6.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Producto XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-cls-1.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Control XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-cls-2.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Control y consola XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-cls-3.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Consola XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-cls-4.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Control XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-cls-5.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Consola XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-cls-6.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Game Boy Color XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-diversos-1.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Camisa Alari</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../../assets/productos/producto-diversos-2.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Camisa SNES</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-diversos-3.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Control y consola XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-diversos-4.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Control y consola XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-diversos-5.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Control y consola XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="../assets/productos/producto-diversos-6.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Producto XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">#111111</a>
-                </section>
-            </article>
         </section>
     </main>
     <footer class="footer row">
@@ -311,11 +98,12 @@
 
     <script src="../javascript/dom.js"></script>
     <script src="../javascript/services/services.mensaje.js"></script>
+    <script src="../javascript/services/services.producto.js"></script>
     <script src="../javascript/validaciones/validar.formulario.mensaje.js"></script>
     <script src="../javascript/validaciones/validar.manejar.errores.js"></script>
     <script src="../javascript/controllers/controllers.mensaje.js"></script>
+    <script src="../javascript/controllers/controllers.productos.leer.administrador.js"></script>
     <script src="../javascript/pruebas/probar.formulario.mensaje.js"></script>
-    <script src="../javascript/agregar_productos.js"></script>
 
 </body>
 </html>

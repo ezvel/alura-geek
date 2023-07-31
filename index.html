@@ -35,7 +35,9 @@
     <link rel="stylesheet" href="css/04.componentes/productos/producto-ver-todo.css">
     <link rel="stylesheet" href="css/04.componentes/productos/productos-producto.css">
     <link rel="stylesheet" href="css/04.componentes/producto/producto.css">
+    <link rel="stylesheet" href="css/04.componentes/producto/producto-header.css">
     <link rel="stylesheet" href="css/04.componentes/producto/producto-imagen.css">
+    <link rel="stylesheet" href="css/04.componentes/producto/producto-link.css">
     <link rel="stylesheet" href="css/04.componentes/nav/nav.css">
     <link rel="stylesheet" href="css/04.componentes/nav/nav-list.css">
     <link rel="stylesheet" href="css/04.componentes/nav/nav-item.css">
@@ -54,7 +56,7 @@
 </head>
 <body>
     <header class="header">
-        <img class="logo--header" src="assets/logo/logo.svg" alt="logo de Alura Geek">
+        <a href="index.html"><img class="logo--header" src="assets/logo/logo.svg" alt="logo de Alura Geek"></a>
         <a class="button button--login" href="pages/login.html">Login</a>
         <form class="busqueda">
             <input class="busqueda__input" type="search" placeholder="¿Qué deseas buscar?">
@@ -64,248 +66,29 @@
     <section class="banner">
         <h2 class="banner__titulo">Febrero Promocional</h2>
         <p class="banner__detalle">Productos seleccionados con 33% de descuento</p>
-        <button class="banner__boton">Ver consolas</button>
+        <button class="button button--banner">Ver consolas</button>
     </section>
     <main>
         <article class="productos row" id="productos-starwars">
             <div class="productos__header col-12">
                 <h2 class="productos__titulo">Star Wars</h2>
-                <p class="productos__ver-todo">Ver todo</p>
+                <a href="#" class="productos__ver-todo">Ver todo</a>
             </div>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-sw-1.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Producto XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-sw-2.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Producto XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-sw-3.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Producto XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-sw-4.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Producto XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-sw-5.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Producto XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-sw-6.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Producto XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
         </article>
         
-
 
         <article class="productos row" id="productos-consolas">
             <div class="productos__header col-12">
                 <h2 class="productos__titulo">Consolas</h2>
-                <p class="productos__ver-todo">Ver todo</p>
+                <a href="#" class="productos__ver-todo">Ver todo</a>
             </div>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-cls-1.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Control XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-cls-2.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Control y consola XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-cls-3.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Consola XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-cls-4.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Control XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-cls-5.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Consola XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-cls-6.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Game Boy Color XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
         </article>
     
-
-
         <article class="productos row" id="productos-diversos">
             <div class="productos__header col-12">
                 <h2 class="productos__titulo">Diversos</h2>
-                <p class="productos__ver-todo">Ver todo</p>
+                <a href="#" class="productos__ver-todo">Ver todo</a>
             </div>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-diversos-1.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Camisa Alari</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-diversos-2.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Camisa SNES</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-diversos-3.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Control y consola XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-diversos-4.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Control y consola XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-diversos-5.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Control y consola XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
-            <article class="productos__producto producto col-6 col-sm-3 col-md-2 oculto">
-                <header class="producto__header">
-                    <img class="producto__imagen" src="assets/productos/producto-diversos-6.png">
-                </header>
-                <section class="producto__content">
-                    <h2 class="producto__nombre">Producto XYZ</h2>
-                    <p class="producto__precio">
-                        $60.00
-                    </p>
-                    <a class="producto__link" href="#">Ver producto</a>
-                </section>
-            </article>
         </article>
     </main>
     
@@ -335,13 +118,12 @@
     </footer>
 
     <script src="../javascript/dom.js"></script>
+    <script src="../javascript/services/services.mensaje.js"></script>
+    <script src="../javascript/services/services.producto.js"></script>
     <script src="../javascript/validaciones/validar.formulario.mensaje.js"></script>
     <script src="../javascript/validaciones/validar.formulario.productos.js"></script>
     <script src="../javascript/validaciones/validar.manejar.errores.js"></script>
     <script src="../javascript/controllers/controllers.mensaje.js"></script>
-    <script src="../javascript/controllers/controllers.productos.js"></script>
-    <script src="../javascript/services/services.mensaje.js"></script>
-    <script src="../javascript/testing.js"></script>
-    <script src="../javascript/agregar_productos.js"></script>
+    <script src="../javascript/controllers/controllers.productos.leer.js"></script>
 </body>
 </html>

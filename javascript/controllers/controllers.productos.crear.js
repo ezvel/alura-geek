@@ -1,6 +1,6 @@
 const $formularioAgregarProducto = document.getElementById("form-agregar-producto");
 
-$formularioAgregarProducto.addEventListener("submit", (e) => {
+$formularioAgregarProducto.addEventListener("submit", async(e) => {
     e.preventDefault();
 
     const url = document.getElementById("url-imagen").value;
@@ -17,7 +17,7 @@ $formularioAgregarProducto.addEventListener("submit", (e) => {
         descripcion: descripcion
     }
 
-    const hayErrores = validarFormularioAgregarProducto(datosAValidar);
+    const hayErrores = validarFormularioProducto(datosAValidar);
 
     if(!hayErrores) {
         datosValidados = {
@@ -28,11 +28,17 @@ $formularioAgregarProducto.addEventListener("submit", (e) => {
             descripcion: descripcion.trim()
         };
 
-        console.log(datosValidados);
+
+        const respuesta = await creaProducto(datosValidados);
         
-        vaciarCamposFormularioProducto();
+
+        vaciarCamposFormularioProducto();        
+        
+
+        document.addEventListener("DOMContentLoaded", () => {
+            alert(respuesta);
+        })
 
     }
-
 
 })

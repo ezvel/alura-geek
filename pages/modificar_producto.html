@@ -55,20 +55,20 @@
         </form>
         <a class="button button--volver" href="administrador.html">Volver</a>
     </header>
-    <main class="main-agregar-producto">
-        <form class="form--agregar-producto" id="form-agregar-producto">
+    <main class="main-modificar-producto">
+        <form class="form--agregar-producto" id="form-modificar-producto">
             <fieldset class="form--agregar-producto__container">
-                <legend class="form--agregar-producto__titulo">Agregar nuevo producto</legend>
-                <input class="form--agregar-producto__input"  type="url" id="url-imagen" placeholder="Url de la imagen">
+                <legend class="form--agregar-producto__titulo">Modificar producto</legend>
+                <input class="form--agregar-producto__input"  name="url-imagen" type="url" id="url-imagen" placeholder="Url de la imagen">
                 <select class="form--agregar-producto__input" name="categoria" id="categoria-producto">
                     <option value="consolas">Consolas</option>
                     <option value="star-wars">Star Wars</option>
                     <option value="diversos">Diversos</option>
                 </select>
-                <input class="form--agregar-producto__input" id="nombre-producto" type="text" placeholder="Nombre del produto">
-                <input class="form--agregar-producto__input" id="precio-producto" type="text" placeholder="Precio del produto">
-                <input class="form--agregar-producto__input form--agregar-producto__input--descripcion" id="descripcion-producto" type="text" placeholder="Descripción del produto">
-                <input type="submit" class="form--agregar-producto__enviar" value="Agregar producto">
+                <input class="form--agregar-producto__input" name="nombre-producto" id="nombre-producto" type="text" placeholder="Nombre del produto">
+                <input class="form--agregar-producto__input" name="precio-producto" id="precio-producto" type="text" placeholder="Precio del produto">
+                <input class="form--agregar-producto__input form--agregar-producto__input--descripcion" name="descripcion-producto" id="descripcion-producto" type="text" placeholder="Descripción del produto">
+                <input type="submit" class="form--agregar-producto__enviar" value="Modificar producto">
             </fieldset>
         </form>
     </main>
@@ -107,7 +107,7 @@
     <script src="../javascript/validaciones/validar.formulario.productos.js"></script>
     <script src="../javascript/validaciones/validar.manejar.errores.js"></script>
     <script src="../javascript/controllers/controllers.mensaje.js"></script>
-    <script src="../javascript/controllers/controllers.productos.crear.js"></script>
+    <script src="../javascript/controllers/controllers.productos.modificar.administrador.js"></script>
     <script src="../javascript/pruebas/probar.formulario.mensaje.js"></script>
     <script src="../javascript/pruebas/probar.formulario.producto.js"></script>
     
