@@ -34,9 +34,9 @@ document.addEventListener("DOMContentLoaded", async() => {
 
         $producto__imagen.src = producto.url;
         $producto__nombre.innerText = producto.nombre;
-        $producto__precio.innerText = producto.precio;
+        $producto__precio.innerText = "$ " + producto.precio;
         $producto__link.innerText = "Ver producto";
-        $producto__link.href = "#";
+        $producto__link.href = `../../pages/detalle_producto.html?id=${producto.id}&categoria=${producto.categoria}`;
 
         $producto__header.appendChild($producto__imagen);
         $producto__content.appendChild($producto__nombre);

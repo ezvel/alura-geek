@@ -31,6 +31,16 @@
     font-weight: bold;
 }
 
+.button--banner {
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .button--banner {
+        display: block;
+    }
+}
+
 .button--enviar:hover {
     background-color: var(--blanco);
     border-color: var(--azul);

@@ -98,6 +98,7 @@ const leerProductosPorID = async(id) => {
     }
 }
 
+
 const eliminarProducto = async(id) => {
     const eliminar = confirm("¿Desea eliminar el producto?");
 
