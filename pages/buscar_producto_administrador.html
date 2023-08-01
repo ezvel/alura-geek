@@ -12,32 +12,42 @@
     <!--Hojas de estilo css-->
     <link rel="stylesheet" href="../css/01.variables/fuentes.css">
     <link rel="stylesheet" href="../css/01.variables/colores.css">
-    
+
     <link rel="stylesheet" href="../css/02.base/normalize.css">
     <link rel="stylesheet" href="../css/02.base/base.css">
     <link rel="stylesheet" href="../css/02.base/grid.css">
 
     <link rel="stylesheet" href="../css/03.secciones/header.css">
     <link rel="stylesheet" href="../css/03.secciones/footer.css">
-    <link rel="stylesheet" href="../css/03.secciones/main.css">
-    
+
     <link rel="stylesheet" href="../css/04.componentes/logo/logo.css">
     <link rel="stylesheet" href="../css/04.componentes/boton/button.css">
     <link rel="stylesheet" href="../css/04.componentes/busqueda/busqueda.css">
     <link rel="stylesheet" href="../css/04.componentes/busqueda/busqueda-input.css">
     <link rel="stylesheet" href="../css/04.componentes/busqueda/busqueda-button.css">
-    
+    <link rel="stylesheet" href="../css/04.componentes/banner/banner.css">
+    <link rel="stylesheet" href="../css/04.componentes/banner/banner-titulo.css">
+    <link rel="stylesheet" href="../css/04.componentes/banner/banner-detalle.css">
+    <link rel="stylesheet" href="../css/04.componentes/banner/banner-boton.css">
+    <link rel="stylesheet" href="../css/04.componentes/productos/productos.css">
+    <link rel="stylesheet" href="../css/04.componentes/productos/productos-header.css">
+    <link rel="stylesheet" href="../css/04.componentes/productos/productos-titulo.css">
+    <link rel="stylesheet" href="../css/04.componentes/productos/producto-ver-todo.css">
+    <link rel="stylesheet" href="../css/04.componentes/productos/productos-producto.css">
+    <link rel="stylesheet" href="../css/04.componentes/producto/producto.css">
+    <link rel="stylesheet" href="../css/04.componentes/producto/producto-header.css">
+    <link rel="stylesheet" href="../css/04.componentes/producto/producto-imagen.css">
+    <link rel="stylesheet" href="../css/04.componentes/producto/producto-link.css">
+    <link rel="stylesheet" href="../css/04.componentes/producto/producto-editar.css">
+    <link rel="stylesheet" href="../css/04.componentes/producto/producto-eliminar.css">
     <link rel="stylesheet" href="../css/04.componentes/nav/nav.css">
     <link rel="stylesheet" href="../css/04.componentes/nav/nav-list.css">
     <link rel="stylesheet" href="../css/04.componentes/nav/nav-item.css">
     <link rel="stylesheet" href="../css/04.componentes/form/form.css">
-    <link rel="stylesheet" href="../css/04.componentes/form/form-container.css">
     <link rel="stylesheet" href="../css/04.componentes/form/form-titulo.css">
     <link rel="stylesheet" href="../css/04.componentes/form/form-label.css">
-    <link rel="stylesheet" href="../css/04.componentes/form/form-input.css">
     <link rel="stylesheet" href="../css/04.componentes/form/form-nombre.css">
     <link rel="stylesheet" href="../css/04.componentes/form/form-mensaje.css">
-    <link rel="stylesheet" href="../css/04.componentes/form/form-enviar.css">
     <link rel="stylesheet" href="../css/04.componentes/autor/autor.css">
     <link rel="stylesheet" href="../css/04.componentes/autor/autor-nombre.css">
     <link rel="stylesheet" href="../css/04.componentes/autor/autor-anio.css">
@@ -48,25 +58,22 @@
 </head>
 <body>
     <header class="header">
-        <a href="../index.html"><img class="logo--header" src="../assets/logo/logo.svg" alt="logo de Alura Geek"></a>
+        <a href="administrador.html"><img class="logo--header" src="../../assets/logo/logo.svg" alt="logo de Alura Geek"></a>
         <form class="busqueda">
             <input class="busqueda__input" id="buscar-input" type="search" placeholder="¿Qué deseas buscar?">
-            <button class="busqueda__button" id="buscar-boton" ><img class="busqueda__icon" src="../assets/iconos/search.svg"></button>
+            <button class="busqueda__button" id="buscar-boton"><img class="busqueda__icon" src="../../assets/iconos/search.svg"></button>
         </form>
-        <a class="button button--volver" href="../index.html">Volver</a>
+        <a class="button button--volver" href="administrador.html">Volver</a>
     </header>
-    <main class="main-login">
-        <form class="form--login" id="form-login">
-            <fieldset class="form--login__container">
-                <legend class="form--login__titulo">Iniciar Sesión</legend>
-                <input class="form--login__input" id="email" type="email" placeholder="Escriba su correo electrónico">
-                <input class="form--login__input" id="password" type="password" placeholder="Escriba su contraseña">
-                <input type="submit" class="form--login__enviar" value="Entrar">
-            </fieldset>
-        </form>
+    <main>
+        <section class="productos row" id="productos">
+            <div class="productos__header col-12">
+                <h2 class="productos__titulo">Producto</h2>
+            </div>
+        </section>
     </main>
-    <footer class="footer row margin-top-0">
-        <a href="../index.html"><img class="logo" src="../assets/logo/logo.svg" alt="logo de Alura Geek"></a>
+    <footer class="footer row">
+        <a href="administrador.html"><img class="logo" src="../assets/logo/logo.svg" alt="logo de Alura Geek"></a>
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="#">Quienes somos</a></li>
@@ -88,18 +95,15 @@
             <p class="autor__anio">2021</p>
         </div>
     </footer>
-    
+
     <script src="../javascript/dom.js"></script>
-    <script src="../javascript/services/services.usuarios.js"></script>
     <script src="../javascript/services/services.mensaje.js"></script>
-    <script src="../javascript/validaciones/validar.formulario.login.js"></script>
+    <script src="../javascript/services/services.producto.js"></script>
     <script src="../javascript/validaciones/validar.formulario.mensaje.js"></script>
     <script src="../javascript/validaciones/validar.manejar.errores.js"></script>
     <script src="../javascript/controllers/controllers.mensaje.js"></script>
-    <script src="../javascript/controllers/controllers.login.js"></script>
-    <script src="../javascript/pruebas/probar.formulario.login.js"></script>
     <script src="../javascript/pruebas/probar.formulario.mensaje.js"></script>
     <script src="../javascript/controllers/controlllers.productos.buscar.js"></script>
-
+    <script src="../javascript/controllers/controllers.productos.encontrar.desde.administrador.js"></script>
 </body>
 </html>

@@ -19,7 +19,6 @@
 
 <link rel="stylesheet" href="../css/03.secciones/header.css">
 <link rel="stylesheet" href="../css/03.secciones/footer.css">
-<link rel="stylesheet" href="../css/03.secciones/detalle-producto.css">
 
 <link rel="stylesheet" href="../css/04.componentes/logo/logo.css">
 <link rel="stylesheet" href="../css/04.componentes/boton/button.css">
@@ -39,6 +38,8 @@
 <link rel="stylesheet" href="../css/04.componentes/producto/producto-header.css">
 <link rel="stylesheet" href="../css/04.componentes/producto/producto-imagen.css">
 <link rel="stylesheet" href="../css/04.componentes/producto/producto-link.css">
+<link rel="stylesheet" href="../css/04.componentes/producto/producto-editar.css">
+<link rel="stylesheet" href="../css/04.componentes/producto/producto-eliminar.css">
 <link rel="stylesheet" href="../css/04.componentes/nav/nav.css">
 <link rel="stylesheet" href="../css/04.componentes/nav/nav-list.css">
 <link rel="stylesheet" href="../css/04.componentes/nav/nav-item.css">
@@ -64,14 +65,11 @@
         </form>
         <a class="button button--volver" href="../index.html">Volver</a>
     </header>
-    <main class="main-detalle-producto">
-        <section class="detalle-producto">
-            <section class="detalle-producto__solicitado" id="detalle-producto__solicitado">
-                
-            </section>
-            <section class="detalle-producto__similares productos productos row" id="detalle-producto__similares">
-                <h2 class="detalle-producto__similares__titulo col-12">Productos similares</h2>
-            </section>
+    <main>
+        <section class="productos row" id="productos">
+            <div class="productos__header col-12">
+                <h2 class="productos__titulo">Producto</h2>
+            </div>
         </section>
     </main>
     <footer class="footer row">
@@ -104,9 +102,8 @@
     <script src="../javascript/validaciones/validar.formulario.mensaje.js"></script>
     <script src="../javascript/validaciones/validar.manejar.errores.js"></script>
     <script src="../javascript/controllers/controllers.mensaje.js"></script>
-    <script src="../javascript/controllers/controllers.productos.leer.detalle.js"></script>
     <script src="../javascript/pruebas/probar.formulario.mensaje.js"></script>
     <script src="../javascript/controllers/controlllers.productos.buscar.js"></script>
-
+    <script src="../javascript/controllers/constrollers.productos.encontrar.js"></script>
 </body>
 </html>

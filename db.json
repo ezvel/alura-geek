@@ -3,23 +3,15 @@
     {
       "id": 1,
       "email": "martin@gmail.com",
-      "password": "asdsadaada1231321"
+      "password": "123456789"
     },
     {
       "id": 2,
       "email": "lorena@gmail.com",
-      "password": "adminsadsda12321312"
+      "password": "adminadminadmin"
     }
   ],
   "productos": [
-    {
-      "id": 1,
-      "url": "https://images.unsplash.com/photo-1620138694717-07141b500f57?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80",
-      "categoria": "star-wars",
-      "nombre": "Taza stormrtrooper",
-      "precio": 1500,
-      "Descripción": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, necessitatibus dicta! Minus praesentium et, explicabo quos ipsum, ullam veniam nesciunt laudantium, perspiciatis dolorem aliquam expedita? Soluta ipsum id repellat praesentium."
-    },
     {
       "url": "https://images.pexels.com/photos/4310574/pexels-photo-4310574.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoria": "star-wars",
@@ -45,12 +37,12 @@
       "id": 5
     },
     {
+      "id": 6,
       "url": "https://images.unsplash.com/photo-1623990672451-13d0fd9780e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
       "categoria": "consolas",
       "nombre": "Gameboy",
-      "precio": "4000",
-      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus at cumque, magni dolor perferendis repellat necessitatibus omnis",
-      "id": 6
+      "precio": "4050",
+      "descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus at cumque, magni dolor perferendis repellat necessitatibus omnis"
     },
     {
       "url": "https://images.unsplash.com/photo-1593118247619-e2d6f056869e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",

@@ -59,9 +59,10 @@
     <header class="header">
         <a href="administrador.html"><img class="logo--header" src="../../assets/logo/logo.svg" alt="logo de Alura Geek"></a>
         <form class="busqueda">
-            <input class="busqueda__input" type="search" placeholder="¿Qué deseas buscar?">
-            <button class="busqueda__button"><img class="busqueda__icon" src="../../assets/iconos/search.svg"></button>
+            <input class="busqueda__input" id="buscar-input" type="search" placeholder="¿Qué deseas buscar?">
+            <button class="busqueda__button" id="buscar-boton"><img class="busqueda__icon" src="../../assets/iconos/search.svg"></button>
         </form>
+        <a class="button button--volver" href="../index.html">Salir</a>
     </header>
     <main>
         <section class="productos row" id="productos">
@@ -103,6 +104,6 @@
     <script src="../javascript/controllers/controllers.mensaje.js"></script>
     <script src="../javascript/controllers/controllers.productos.leer.administrador.js"></script>
     <script src="../javascript/pruebas/probar.formulario.mensaje.js"></script>
-
+    <script src="../javascript/controllers/controllers.productos.buscar.desde.administrador.js"></script>
 </body>
 </html>
